@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Operators</title>
+    <script>
+        let a = 5;
+        let b = "5";
+        let c = 5.0;
+        let d = "5.0";
+        document.write(`${a==b}<br>`); // true, because '==' performs type coercion and considers 5 and "5" equal.
+        document.write(`${a===b}<br>`); // false, because '===' checks for both value and type, and 5 (number) is not the same type as "5" (string).
+        document.write(`${a==c}<br>`); // true, because '==' performs type coercion and considers 5 and 5.0 equal.
+        document.write(`${a === c}<br>`); // true, because '===' checks for both value and type, and 5 (number) is the same type and value as 5.0 (number).
+        document.write(`${a == d}<br>`); // true, because '==' performs type coercion and considers 5 and "5.0" equal.
+        document.write(`${a === d}<br>`); // false, because '===' checks for both value and type, and 5 (number) is not the same type as "5.0" (string).  
+        document.write(`${b == d}<br>`); // false, because '==' performs type coercion but "5" and "5.0" are not considered equal due to the presence of the decimal point in "5.0".
+        document.write(`${b === d}<br>`); // false, because '===' checks for both value and type, and "5" (string) is not the same type as "5
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

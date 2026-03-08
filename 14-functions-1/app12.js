@@ -1,0 +1,10 @@
+
+function f1() {
+    let a = 10;
+    console.log(`In f1: a = ${a}`);
+}
+function f2() {
+    console.log(`In f2: a = ${a}`); //error: a is not defined
+}
+f1();
+f2();

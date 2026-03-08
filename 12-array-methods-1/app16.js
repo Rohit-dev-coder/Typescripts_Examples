@@ -1,0 +1,9 @@
+let fruits = ["guava", "apple", "grapes", "banana"];
+
+let x = fruits.slice();
+
+console.log(`Size of fruits array: ${fruits.length}`);
+console.log(`Values in fruits array: ${fruits}`);
+
+console.log(`Size of x array: ${x.length}`);
+console.log(`Values in x array: ${x}`);

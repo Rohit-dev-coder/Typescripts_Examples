@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Type Coercion</title>
+    <script>
+        let x = 10;
+        let y = 20;
+        let z = "30";
+        document.write(x+y + "<br>"); // 30
+        document.write(y+z + "<br>"); // 2030 because y is a number and z is a string, so y is converted to a string and concatenated with z
+        document.write(x+true + "<br>"); // 11 because true is converted to 1 and added to x
+        document.write(z+true + "<br>"); // 10 because false is converted to
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

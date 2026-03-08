@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+    <script>
+        let a = 10;
+        let b = 10;
+        let c = "10";
+        document.write(`${a==b} <br>`); // true, because 'a' and 'b' are equal in value.
+        document.write(`${a==c} <br>`); // true, because 'a' and 'c' are equal in value (type coercion occurs).
+        document.write(`${a===b} <br>`); // true, because 'a' and 'b' are equal in value and type.
+        document.write(`${a===c} <br>`); // false, because 'a' and 'c' are not equal in type (number vs string).
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

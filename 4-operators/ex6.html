@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Operators</title>
+    <script>
+        let a = 10, b = 5, c = 15;
+        document.write(`${a>b && b>c} <br>`); // false && false => false
+        document.write(`${a>b || b>c} <br>`); // true || false => true
+        let d = true;
+        document.write(`${!d} <br>`); // !true => false
+        d = false;
+        document.write(`${!d} <br>`); // !false => true
+        d = 25;
+        document.write(`${!d} <br>`); // !25 => false (non-zero numbers are truthy, so !25 is false)
+        d = "Rohit";
+        document.write(`${!d} <br>`); // !"Rohit" => false (non-empty strings are truthy, so !"Rohit" is false)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
